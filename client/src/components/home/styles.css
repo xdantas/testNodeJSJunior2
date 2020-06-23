@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+
+.divider-gradient-blue-header{
+    background-image: linear-gradient(to left, #0075c4, #00b7ff);
+    width: 100%;
+    height: 5px;
+    margin-bottom: 2rem;
+}
+
+.divider-gradient-blue-footer{
+    background-image: linear-gradient(to left, #0075c4, #00b7ff);
+    width: 100%;
+    height: 5px;
+    margin-top: 2rem;
+}
+
+.jumbotron{
+    margin-bottom: 0rem;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-family: 'Mukta', sans-serif;
+}
+
+.jumbotron h1{
+    font-weight: bold;
+    color: #0c3d99;
+}
+
+.form-control{
+    margin-bottom: 20px;
+}
+
+.form-check{
+    margin-bottom: 10px;
+}
+
+.align-btn{
+    text-align: end;
+}
+
+.btn-form{
+    background-color: #0c3d99;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .align-btn{
+        text-align: center;
+    }
+}

@@ -1,0 +1,45 @@
+version: '3'
+
+services:
+    client:
+        build: .
+        volumes:
+            - "./client:/app"
+        ports:
+            - "3000:3000"
+        depends_on: 
+            - server
+        stdin_open: true
+        tty: true
+    server:
+        build: .
+        volumes:
+            - "./server:/app"
+        ports:
+            - "5000:5000"
+        depends_on: 
+            - db
+        links: 
+            - db
+        networks:
+            - mysql-compose-network
+    db:
+        image: mysql:5.7
+        environment:
+            MYSQL_ROOT_PASSWORD: "root"
+            MYSQL_DATABASE: "db_cntl"
+        ports:
+            - "3306:3306"
+        volumes:
+            - /var/lib/mysql
+        networks:
+            - mysql-compose-network
+    adminer:
+        image: adminer
+        ports:
+            - 8080:8080
+        networks:
+            - mysql-compose-network
+networks: 
+    mysql-compose-network:
+        driver: bridge
