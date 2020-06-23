@@ -2,7 +2,9 @@ version: '3'
 
 services:
     client:
-        build: .
+        build: 
+            context: ./client
+            dockerfile: Dockerfile
         volumes:
             - "./client:/app"
         ports:
@@ -12,7 +14,9 @@ services:
         stdin_open: true
         tty: true
     server:
-        build: .
+        build: 
+            context: ./server
+            dockerfile: Dockerfile
         volumes:
             - "./server:/app"
         ports:
