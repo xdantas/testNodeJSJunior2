@@ -12,9 +12,9 @@
 ###### adminer: `8080`
 
 ###### Caso seja necessário modificações, altere nos arquivos: 
-###### **docker-compose.yml**
-###### **server.js**
-###### **database.js**
+> ###### docker-compose.yml
+> ###### server.js
+> ###### database.js
 
 #### 2.2 Após a instalação dos programas, extraia o repositório e acesse ele pelo terminal, entre na pasta *client* e execute o seguinte comando: ```npm install```
 
@@ -30,7 +30,7 @@
 ###### Usuário: `root`
 ###### Senha: `root`
 
-#### 4. Após logar no adminer, acesse a base de dados ``db_cntl`` e importe o arquivo que está na raíz do repositório ``db_cntl``. Ao importar iremos ter a tabela ``tb_cadastros``, agora a API do Node com o MySQL irá funcionar corretamente. Basta atualizar o container **server**.
+#### 4. Após logar no adminer, acesse a base de dados ``db_cntl`` e importe o arquivo ``db_cntl.sql`` que está na raíz do repositório. Ao importar iremos ter a tabela ``tb_cadastros``, agora a API do Node com o MySQL irá funcionar corretamente. Basta atualizar o container *server*.
 
 #### Feito isso, basta acessar o container *client* e realizar um cadastro.
 
