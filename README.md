@@ -29,6 +29,7 @@
 ###### Servidor: `db`
 ###### Usuário: `root`
 ###### Senha: `root`
+###### Base de dados: `db_cntl`
 
 #### 4. Após logar no adminer, acesse a base de dados ``db_cntl`` e importe o arquivo ``db_cntl.sql`` que está na raíz do repositório. Ao importar iremos ter a tabela ``tb_cadastros``, agora a API do Node com o MySQL irá funcionar corretamente. Basta atualizar o container *server*.
 
