@@ -8,7 +8,7 @@
 #### Atenção, mantenha o padrão de Portas e Credênciais para que não ocorra problemas de conexão, por padrão, mantive as seguintes portas para os containers:
 ###### client: `3000`
 ###### server: `5000`
-###### db: `3306` (Recomendo desativar o MySQL Workbench ou banco de dados que esteja utilizando a porta)
+###### db: `3306` (Recomendo desativar o MySQL Workbench ou outros softwares que podem estar utilizando a porta)
 ###### adminer: `8080`
 
 ###### Caso seja necessário modificações, altere nos arquivos: 
